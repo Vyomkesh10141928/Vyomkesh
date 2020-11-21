@@ -1,0 +1,57 @@
+#p1 {
+    font-size: 20px;
+    line-height: 50px;
+}
+
+#Profile {
+    width: 300px;
+    border-radius: 150px;
+}
+
+img {
+    width: 500px;
+    margin: 10px;
+}
+
+p {
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+#hi {
+    margin: 100px;
+    padding: 5px;
+}
+
+h1 {
+
+    font-family: serif;
+    font-size: 30px;
+    background-color:
+
+
+}
+
+#myNavbar {
+    background-color: black;
+    color: aliceblue;
+    font-family: sans-serif;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+li{
+    display: inline;
+    font-family: serif;
+    font-size: 30px;
+    margin: 40px;
+ 
+}
+li a{
+    color:white;
+}
