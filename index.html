@@ -13,50 +13,158 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Vyomkesh Buch</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li id="a"><a href="#aboutMe">About Me</a></li>
-                <li id="a"><a href="#photos">My Photos</a></li>
-                <li id="a"><a href="#audio">My Audio Recordings</a></li>
+
+                <a class="navbar-brand"  href="#">Vyomkesh Buch</a>
+                <li id="a"><a href="#aboutMe">About</a></li>
+                <li id="a"><a href="#photos">Photos</a></li>
                 <li id="a"><a href="#apps">My Apps</a></li>
-                <li id="a"><a href="#birds">Birds</a></li>
+                <li id="a"><a href="#birds">Breeding theory </a></li>
+                <li id="a"><a href="#audio">Contact</a></li>
             </ul>
         </div>
     </nav>
     <section id="aboutMe">
+        <section id="one" style="text-align: center;padding: 50px;">
+
+            <p style="margin-top: 0px; font-size: 100px;color:white;">Vyomkesh<br>Buch</p>
+            <img class="4IMG" id="Profile" src="WhatsApp%20Image%202020-06-10%20at%2010.18.47%20PM%20(1).jpeg">
+        </section>
         <h1>About Me</h1>
         <div id="img">
-            <center><img id="Profile" src="WhatsApp%20Image%202020-06-10%20at%2010.18.47%20PM%20(1).jpeg"></center>
+            <center></center>
         </div>
-        <p id="p1">Name-Vyomkesh Buch<br>Date of Birth- 10 April 2008<br>Place of birth- Mumbai,India<br>School- Bhulka Vihar School,Surat<br>Hobbies- Birdwatching,Photography</p>
+        <p id="p1">Vyomkesh Buch is a birder from surat who thinks that any place in the world is a great spot to watch
+            birds.He got intrested in birding during lockdown(May 2020) by trying to take photograph of birds with
+            mobile.He got introduced to <a href="https://ebird.org/india/home" style="text-decoration: none;"><b
+                    style="color: green;">Ebird</b></a> by exploring different websites to learn more about birds.He
+            admires all species but his favorite birds include woodpeckers,warblers,owls etc.He wants to see 1000
+            species
+            from India.He likes to bird with others but also birds alone sometimes.He is fortunate to have few trees
+            near his home which provide nesting for many species of birds.He has observed and made a theory on breeding
+            of Jungle Babblers(Turdoeis Striata).Along with birding,he also records bird songs and does some nature
+            photography.He also makes websites and sometimes apps(not yet released). </p>
+
     </section>
     <section id="photos">
         <h1>Photos</h1>
-        <center>
-            <div><span><img src="billipatra.jpg"></span><span><img src="MOon1.jpg"></span></div>
-            <div><span><img src="Moon2.jpg"></span><span><img src="Kancho.jpgely vocal"></span></div>
-            <div><span><img src="keri.jpg"></span></div>
-        </center>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 6</div>
+                <img src="billipatra.jpg" style="width:100%">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 6</div>
+                <img src="Surat.jfif" style="width:100%">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 6</div>
+                <img src="Moon2.jpg" style="width:100%">
+                <div class="text"></div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 6</div>
+                <img src="MOon1.jpg" style="width:100%">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 6</div>
+                <img src="Kancho.jpg" style="width:100%">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 6</div>
+                <img src="keri.jpg" style="width:100%">
+                <div class="text"></div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+
     </section>
-    <section id="audio">
-        <h1>Audio Recordings</h1>
-
-        <center><iframe width="640" height="357" src="https://macaulaylibrary.org/asset/263864501/embed/640" frameborder="0" allowfullscreen style="width:640px;"></iframe>
-            <p><a href="https://ebird.org/species/comtai1/">Common Tailorbird(Orthotomus sutorius)</a></p>
-
-
-            <iframe width="640" height="380" src="https://macaulaylibrary.org/asset/265319111/embed" frameborder="0" allowfullscreen></iframe>
-            <p><a href="https://ebird.org/species/magrob/">Oriental Magpie Robin(Copsychus saularis)</a></p>
-            <iframe width="640" height="380" src="https://macaulaylibrary.org/asset/264475071/embed" frameborder="0" allowfullscreen></iframe>
-            <p><a href="https://ebird.org/species/revbul">Red Vented Bulbul(Pycnonotus cafer)</a> </p>
-        </center>
     </section>
     <section id="apps">
-        <h1>Apps</h1><iframe id="hi" width="452" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/wCFOBbvJGZ4uA1U8T3i2UpPM8GV7t20OpsL2FQCf22O/embed?nosource"> </iframe>
-        <iframe id="hi" width="452" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/WkhXSUwCZIRfq88ox8-ELbfgcZ0YQPi7iOVV6DFyLL6/embed?nosource"></iframe>
+        <h1>Apps</h1><iframe id="hi" width="452" height="620" style="border: 0px;"
+            src="https://studio.code.org/projects/applab/wCFOBbvJGZ4uA1U8T3i2UpPM8GV7t20OpsL2FQCf22O/embed?nosource">
+        </iframe>
+        <iframe id="hi" width="452" height="620" style="border: 0px;"
+            src="https://studio.code.org/projects/applab/WkhXSUwCZIRfq88ox8-ELbfgcZ0YQPi7iOVV6DFyLL6/embed?nosource"></iframe>
     </section>
-<d
+    <section id="birds">
+        <h1>Breeding of Jungle Babblers</h1>
 
-</body></html>
+        <cite>By Vyomkesh Buch</cite>
+        <p>1/2 to half months - mating/courtship etc.
+            <br>
+            1 week - Nest building
+            <br>
+            1-2 weeks- Incubation and chick raising
+            <br>
+            1 week - Flegded chick
+
+        </p>
+    </section>
+    <section id="audio" style="background-image: url(wood-texture.jpg);color:white; height: 100px;">
+        <p style="padding: 10px;"> Contact at
+            <br>
+            vyomkeshbuchphotography@gmail.com</p>
+
+    </section>
+</body>
+
+</html>
