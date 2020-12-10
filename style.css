@@ -38,6 +38,8 @@ h1 {
     background-color: black;
     color: aliceblue;
     font-family: sans-serif;
+    padding-right: -9;
+   
 
 }
 
@@ -158,7 +160,3 @@ body{
     padding-right: 20px;
     padding-bottom: 150px;
    }
-#photos{
-    background-image: url(Background.jfif);
-   
-}

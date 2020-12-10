@@ -1,0 +1,137 @@
+<html>
+
+<head>
+    <title>Vyomkesh Buch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="padding: 0%;">
+    <nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999;">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+
+                <a class="navbar-brand" href="#">Vyomkesh Buch</a>
+                <li id="a"><a href="index.html">About</a></li>
+                <li id="a"><a href="Photos.html">Photos</a></li>
+                <li id="a"><a href="Apps.html">Apps</a></li>
+                <li id="a"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="aboutMe">
+        <section id="one" style="text-align: center;padding: 50px;">
+
+            <p style="margin-top: 0px; font-size: 100px;color:white;">Vyomkesh<br>Buch</p>
+            <img class="4IMG" id="Profile" src="WhatsApp%20Image%202020-06-10%20at%2010.18.47%20PM%20(1).jpeg">
+        </section>
+        <section id="photos" style="margin-top: 300px ;">
+            <h1>Photos</h1>
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="billipatra.jpg" style="width:100%">
+                    <div class="text"></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="Surat.jfif" style="width:100%">
+                    <div class="text"></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="Moon2.jpg" style="width:100%">
+                    <div class="text"></div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="MOon1.jpg" style="width:100%">
+                    <div class="text"></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="Kancho.jpg" style="width:100%">
+                    <div class="text"></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="keri.jpg" style="width:100%">
+                    <div class="text"></div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+
+            <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) {
+                        slideIndex = 1
+                    }
+                    if (n < 1) {
+                        slideIndex = slides.length
+                    }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                }
+            </script>
+            <section id="contact" style="background-image: url(wood-texture.jpg);color:white; height: 500px; padding:50;">
+                <p style="padding: 10px;"> Contact at
+                    <br>
+                    vyomkeshbuchphotography@gmail.com</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1860.0233716925609!2d72.79711760796353!3d21.19030199733095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04dd153713aa5%3A0x5598e868a9a48971!2sAahura%20Nagar%20Society%2C%20Adajan%20Gam%2C%20Adajan%2C%20Surat%2C%20Gujarat%20395009!5e0!3m2!1sen!2sin!4v1607578094721!5m2!1sen!2sin"
+                    width="1200" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+
+
+
+            </section> 
+        </section> 
+    </section> 
+</body> 
+
+</html>

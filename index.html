@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body style="padding: 0%;">
     <nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999;">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -17,12 +17,11 @@
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
 
-                <a class="navbar-brand"  href="#">Vyomkesh Buch</a>
+                <a class="navbar-brand" href="#">Vyomkesh Buch</a>
                 <li id="a"><a href="#aboutMe">About</a></li>
-                <li id="a"><a href="#photos">Photos</a></li>
-                <li id="a"><a href="#apps">My Apps</a></li>
-                <li id="a"><a href="#birds">Breeding theory </a></li>
-                <li id="a"><a href="#audio">Contact</a></li>
+                <li id="a"><a href="Photos.html">Photos</a></li>
+                <li id="a"><a href="Apps.html">My Apps</a></li>
+                            <li id="a"><a href="#audio">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -32,137 +31,62 @@
             <p style="margin-top: 0px; font-size: 100px;color:white;">Vyomkesh<br>Buch</p>
             <img class="4IMG" id="Profile" src="WhatsApp%20Image%202020-06-10%20at%2010.18.47%20PM%20(1).jpeg">
         </section>
-        <h1>About Me</h1>
+        <h1>About</h1>
         <div id="img">
             <center></center>
         </div>
-        <p id="p1">Vyomkesh Buch is a birder from surat who thinks that any place in the world is a great spot to watch
+        <p id="p1">Birdwatching, or birding, is a form of wildlife observation in which the observation of birds is a
+            recreational activity or citizen science. It can be done with the naked eye, through a visual enhancement
+            device like binoculars and telescopes, by listening for bird sounds,or by watching public webcams.
+
+            Birdwatching often involves a significant auditory component, as many bird species are more easily detected
+            and identified by ear than by eye. Most birdwatchers pursue this activity for recreational or social
+            reasons, unlike ornithologists, who engage in the study of birds using formal scientific methods.Vyomkesh
+            Buch is one such birder from surat who thinks that any place in the world is a great spot to watch
             birds.He got intrested in birding during lockdown(May 2020) by trying to take photograph of birds with
             mobile.He got introduced to <a href="https://ebird.org/india/home" style="text-decoration: none;"><b
                     style="color: green;">Ebird</b></a> by exploring different websites to learn more about birds.He
             admires all species but his favorite birds include woodpeckers,warblers,owls etc.He wants to see 1000
             species
             from India.He likes to bird with others but also birds alone sometimes.He is fortunate to have few trees
-            near his home which provide nesting for many species of birds.He has observed and made a theory on breeding
-            of Jungle Babblers(Turdoeis Striata).Along with birding,he also records bird songs and does some nature
-            photography.He also makes websites and sometimes apps(not yet released). </p>
-
-    </section>
-    <section id="photos">
-        <h1>Photos</h1>
-        <!-- Slideshow container -->
-        <div class="slideshow-container">
-
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 6</div>
-                <img src="billipatra.jpg" style="width:100%">
-                <div class="text"></div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 6</div>
-                <img src="Surat.jfif" style="width:100%">
-                <div class="text"></div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 6</div>
-                <img src="Moon2.jpg" style="width:100%">
-                <div class="text"></div>
-            </div>
-            <div class="mySlides fade">
-                <div class="numbertext">4 / 6</div>
-                <img src="MOon1.jpg" style="width:100%">
-                <div class="text"></div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">5 / 6</div>
-                <img src="Kancho.jpg" style="width:100%">
-                <div class="text"></div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">6 / 6</div>
-                <img src="keri.jpg" style="width:100%">
-                <div class="text"></div>
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-        </div>
-        <br>
-
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-            <span class="dot" onclick="currentSlide(5)"></span>
-            <span class="dot" onclick="currentSlide(6)"></span>
-        </div>
-
-        <script>
-            var slideIndex = 1;
-            showSlides(slideIndex);
-
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
-            }
-
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
-            }
-
-            function showSlides(n) {
-                var i;
-                var slides = document.getElementsByClassName("mySlides");
-                var dots = document.getElementsByClassName("dot");
-                if (n > slides.length) {
-                    slideIndex = 1
-                }
-                if (n < 1) {
-                    slideIndex = slides.length
-                }
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex - 1].style.display = "block";
-                dots[slideIndex - 1].className += " active";
-            }
-        </script>
-
-    </section>
-    </section>
-    <section id="apps">
-        <h1>Apps</h1><iframe id="hi" width="452" height="620" style="border: 0px;"
-            src="https://studio.code.org/projects/applab/wCFOBbvJGZ4uA1U8T3i2UpPM8GV7t20OpsL2FQCf22O/embed?nosource">
-        </iframe>
-        <iframe id="hi" width="452" height="620" style="border: 0px;"
-            src="https://studio.code.org/projects/applab/WkhXSUwCZIRfq88ox8-ELbfgcZ0YQPi7iOVV6DFyLL6/embed?nosource"></iframe>
-    </section>
-    <section id="birds">
-        <h1>Breeding of Jungle Babblers</h1>
-
-        <cite>By Vyomkesh Buch</cite>
-        <p>1/2 to half months - mating/courtship etc.
+            near his home which provide nesting for many species of birds.He has observed internal fighting of Asian
+            Koels,Breeding ofJungle Babblers,Tailorbirds and Bulbul all in one year.Along with birding,he also records
+            bird songs and does some nature
+            photography.He also makes websites and sometimes apps(by block coding).His current tally for Gujarat is 113
+            species of birds,and is hoping to increase it by birding more.He has a target to bird 1000 hours in 2021
+            alone.He also observes animals and reptiles.His current list of observations is not much but he is keen on
+            increasing the list.He is keen on spotting birds anywhere in the world wether he is in car or on foot.
+            <br>More details as follows
             <br>
-            1 week - Nest building
             <br>
-            1-2 weeks- Incubation and chick raising
             <br>
-            1 week - Flegded chick
-
+            Name - Vyomkesh Buch
+            <br>
+            Birth Date - 10 April 2010
+            <br>
+            Email Address - vyomkeshbuchphotography@gmail.com
+            <br>
+            Hobbies - birding,photography,audio recording
+            <br>
+            <a style="text-decoration: none;" href="https://ebird.org/india/profile/MTkxMDQ4OQ"><b style="color: green;">EBird Profile</b></a>
+            
         </p>
+
+
+
     </section>
-    <section id="audio" style="background-image: url(wood-texture.jpg);color:white; height: 100px;">
+    </section>
+   
+    <section id="audio" style="background-image: url(wood-texture.jpg);color:white; height: 500px; padding:50;">
         <p style="padding: 10px;"> Contact at
             <br>
             vyomkeshbuchphotography@gmail.com</p>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1860.0233716925609!2d72.79711760796353!3d21.19030199733095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04dd153713aa5%3A0x5598e868a9a48971!2sAahura%20Nagar%20Society%2C%20Adajan%20Gam%2C%20Adajan%2C%20Surat%2C%20Gujarat%20395009!5e0!3m2!1sen!2sin!4v1607578094721!5m2!1sen!2sin"
+            width="1200" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+
+
 
     </section>
 </body>
